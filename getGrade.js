@@ -18,10 +18,17 @@ console.log(getGrade(96));
 console.log(getGrade(82));
 console.log(getGrade(56));
 
-
 // 100	"A++"
 // 90 - 99	"A"
 // 80 - 89	"B"
 // 70 - 79	"C"
 // 60 - 69	"D"
 // 0 - 59	"F"
+
+const getGrade2 = (score) => {
+   return score >= 100 ? "A++" : score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : score >= 60 ? "D" : "F" 
+}
+
+console.log(getGrade2(96));
+console.log(getGrade2(82));
+console.log(getGrade2(56));
