@@ -26,9 +26,16 @@ console.log(getGrade(56));
 // 0 - 59	"F"
 
 const getGrade2 = (score) => {
-   return score >= 100 ? "A++" : score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : score >= 60 ? "D" : "F" 
+   return score >= 100 ? "A++" :
+        score >= 90 ? "A" :
+        score >= 80 ? "B" :
+        score >= 70 ? "C" :
+        score >= 60 ? "D" :
+        "F" 
 }
 
 console.log(getGrade2(96));
 console.log(getGrade2(82));
 console.log(getGrade2(56));
+
+module.exports = getGrade2;
